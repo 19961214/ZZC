@@ -1,0 +1,72 @@
+<!--pages/receiptMessage/receiptMessage.wxml-->
+<!-- <view class="wrap"> -->
+  <scroll-view scroll-y id="somll-wrap" style="height: {{cHeight}}px;" bindscrolltolower="lower">
+
+    <!-- 当天没有收款记录结构 -->
+    <view class="receipt-card" wx:if='{{today!==receiptMessage[0].dayTime}}'>
+      <view class="receipt-card-top">
+        {{today}}（今天）
+      </view>
+      <view class="receipt-card-bottom">
+        <view class="card-bottom-text1">
+          每一笔收款都记录着你的付出和努力
+        </view>
+        <view class="card-bottom-text2"> 
+          今天请继续加油
+        </view>
+      </view>
+    </view>
+    <!-- 历史收款记录结构 -->
+    <view class="receipt-card" wx:for="{{receiptMessage}}" wx:key="index">
+      <view class="receipt-card-top">
+        {{item.dayTime}}
+      </view>
+      <view class="receipt-card-content">
+        <view class="card-content1">
+          <view class="card-content1-text1">收款笔数 {{item.totalCount}}</view>
+          <view class="card-content1-text2">收款共计 ￥{{item.totalAmount}}</view>
+        </view>
+        <view class="line" wx:for="{{item.detailList}}" wx:key="index">
+          <view class="card-content2">
+            <view class="content2-img-wrap">
+              <image class="content2-img" src="../../static/images/zhifubao.png"></image>
+            </view>
+            <view class="content2-text1-wrap">
+              <view class="content2-text1">{{item.tennatEnterpriesName}}</view>
+            </view>
+            <view class="content2-text2">+{{item.commissionAmount}}</view>
+          </view>
+          <view class="card-content-time"> 
+            {{item.commissionPayTime}}
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 微信 -->
+    <!-- <view class="receipt-card">
+    <view class="receipt-card-top">
+      2019-08-07
+    </view>
+    <view class="receipt-card-content">
+      <view class="card-content1">
+        <view class="card-content1-text1">收款笔数  1</view>
+        <view class="card-content1-text2">收款共计  ￥1.00</view>
+      </view>
+      <view class="card-content2">
+        <view class="content2-img-wrap">
+          <image class="content2-img" src="../../static/images/weixin.png"></image>
+        </view>
+        <view class="content2-text1">XX用工协议付款</view>
+        <view class="content2-text2">+1.00</view>
+      </view>
+      <view class="card-content-time">
+        19:10:54
+      </view>
+    </view>
+  </view> -->
+
+
+
+  </scroll-view>
+<!-- </view> -->

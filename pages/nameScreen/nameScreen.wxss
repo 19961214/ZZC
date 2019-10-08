@@ -1,0 +1,60 @@
+/* pages/nameScreen/nameScreen.wxss */
+.big-img-wrap{
+  width: 100%;
+  height: 560rpx;
+}
+.big-img{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  padding: 0 34rpx;
+  margin-top: 93rpx;
+}
+.content1-wrap{
+  width: 100%;
+}
+.content1-img-wrap{
+  width: 26rpx;
+  height: 26rpx;
+  margin: 0 10rpx;
+  display: inline-block;
+  position: relative;
+}
+.content1-img{
+  width: 12rpx;
+  height: 12rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin: auto;
+}
+.content1-text{
+  color: #333;
+  font-size: 26rpx;
+  letter-spacing:5rpx;
+  line-height:41rpx;
+}
+.content1-wrap2{
+  margin-top: 50rpx;
+}
+.btn-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.btn-img{
+  width: 95%;
+  height: 130rpx;
+  position: relative;
+}
+.btn-text{
+  position: absolute;
+  color: #fff;
+  font-size: 30rpx;
+}

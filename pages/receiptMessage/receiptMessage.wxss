@@ -1,0 +1,125 @@
+/* pages/receiptMessage/receiptMessage.wxss */
+page {
+  height: 100%;
+  background-color: #F1F1F1;
+  
+}
+/* ::-webkit-scrollbar {
+     width: 0;
+     height: 0;
+     color: transparent;
+} */
+
+.wrap {
+  width: 100%;
+  
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  
+  /* margin: 0 auto; */
+  /* padding-left: 5%; */
+}
+#somll-wrap{
+  width: 100%;
+}
+.receipt-card{
+  margin-left: 5%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 90%;
+}
+.receipt-card-top{
+  background-color: #D6D6D6;
+  padding: 25rpx 30rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.receipt-card-bottom{
+  background-color: #fff;
+  padding: 45rpx 80rpx 50rpx 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-bottom-text1{
+  color: #B0B0B0;
+}
+.card-bottom-text2{
+  color: #B0B0B0;
+  margin-top: 15rpx;
+}
+.receipt-card-content{
+  background-color: #fff;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-content1{
+  width: 100%;
+  padding: 25rpx 30rpx;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+.card-content1-text1{
+  font-size: 35rpx;
+  color: #666666;
+}
+.card-content1-text2{
+  font-size: 35rpx;
+  color: #666666;
+
+}
+.line{
+  width: 100%;
+  border-bottom: 1rpx solid #ddd;
+}
+.card-content2{
+  width: 100%;
+  padding: 25rpx 30rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.content2-img-wrap{
+  width: 121rpx;
+  height: 37rpx;
+  border: 1px dashed #333;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: none;
+}
+.content2-img{
+  width: 120rpx;
+  height: 35rpx;
+}
+.content2-text1-wrap{
+  /* margin-left: 30rpx; */
+  width: 58%;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+}
+.content2-text1{
+  font-size: 35rpx;
+  
+}
+.content2-text2{
+  font-size: 35rpx;
+  color: #E30D0D;
+  font-weight: 600;
+  position: absolute;
+  right: 25rpx;
+}
+.card-content-time{
+  padding: 0 30rpx 25rpx 30rpx;
+  color: #BFBFBF;
+}

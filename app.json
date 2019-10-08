@@ -1,0 +1,53 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/flow/flow",
+    "pages/service/service",
+    "pages/falseResult/falseResult",
+    "pages/result/result",
+    "pages/complain/complain",
+    "pages/receiptMessage/receiptMessage",
+    "pages/auth/mobile/mobile",
+    "pages/signMessage/signMessage",
+    "pages/me/me",
+    "pages/identityCard/identityCard",
+    "pages/receiptNumber/receiptNumber",
+    "pages/problem/problem",
+    "pages/auth/btnAuth/btnAuth",
+    "pages/realName/realName",
+    "pages/video/video",
+    "pages/contract/contract",
+    "pages/safety/safety",
+    "pages/speedy/speedy",
+    "pages/efficient/efficient",
+    "pages/nameScreen/nameScreen"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#4671E1",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/static/images/home.png",
+        "selectedIconPath": "/static/images/home1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/static/images/wode.png",
+        "selectedIconPath": "/static/images/wode1.png"
+      }
+    ]
+  }
+}

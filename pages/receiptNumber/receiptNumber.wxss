@@ -1,0 +1,162 @@
+/* pages/receiptNumber/receiptNumber.wxss */
+page {
+  height: 100%;
+  background-color: #F1F1F1;
+}
+
+.wrap {
+  width: 100%;
+  padding-bottom: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.number-card{
+  margin-top: 30rpx;
+  width: 90%;
+}
+.number-card-title{
+  background-color: #fff;
+  padding: 25rpx 50rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 200rpx;
+}
+.number-card-content{
+  background-color: #3B75DF;
+  padding: 45rpx 50rpx;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+}
+/* .number-img-wrap{
+  width: 181rpx;
+  height: 66rpx;
+  border: 1px dashed #ccc;
+} */
+.number-img{
+  border: 1px dashed #ccc;
+  width: 180rpx;
+  height: 65rpx;
+}
+.number-img-text{
+  color: #fff;
+  font-size: 35rpx;
+  position: absolute;
+  right: 50rpx;
+}
+.wechat{
+  background-color: #22AC38;
+}
+.wechat2{
+  width: 230rpx;
+  height: 55rpx;
+}
+.card-content{
+  padding: 30rpx 40rpx;
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+  position: relative;
+  overflow: hidden;
+  background-color: #9E3033;
+  box-shadow: #b7c8ef 5rpx 5rpx 10rpx 5rpx;
+}
+.card-content-top{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative
+}
+.card-content-imgwrap{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content-img{
+  width: 95rpx;
+  height: 95rpx;
+}
+.card-content-text{
+  font-size: 35rpx;
+  color: #fff;
+  position: absolute;
+  right: 40rpx;
+}
+.card-content-bottom{
+  width: 100%;
+  height: 200rpx;
+  
+}
+.card-content-logo{
+  width: 334rpx;
+  height: 361rpx;
+  position: absolute;
+  right: -85rpx;
+  bottom: -190rpx;
+}
+.content-bottom-text{
+  color: #fff;
+  font-size: 26rpx;
+  position: absolute;
+  right: 40rpx;
+  bottom: 30rpx;
+}
+.card-top{
+  margin-top: -200rpx;
+}
+.card-color{
+  background-color: rgb(252, 102, 101);
+}
+.card-color1{
+  background-color: #273F88;
+}
+.card-color2{
+  background-color: #23927D;
+}
+.card-color3{
+  background-color: #9E3033;
+}
+.card-color5{
+  background-color: rgb(55, 116, 196);
+}
+.card-color6{
+  background-color: rgb(251, 153, 66);
+}
+.card-color7{
+  background-color: rgb(255, 117, 106);
+}
+.card-color8{
+  background-color: rgb(56, 140, 204);
+}
+.card-color9{
+  background-color: rgba(158, 86, 22, 0.507);
+}
+.card-color10{
+  background-color: rgba(39, 36, 33, 0.788);
+}
+.card-color11{
+  background-color: rgba(39, 36, 33, 0.788);
+}
+.card-color12{
+  background-color: rgba(39, 36, 33, 0.788);
+}
+.card-color13{
+  background-color: rgba(39, 36, 33, 0.788);
+}
+.card-color14{
+  background-color: #19BF0B;
+}
+.bank-name{
+  color: rgb(227, 244, 248);
+  /* margin-left: -200rpx; */
+  font-size: 30rpx;
+  margin-left: 10rpx;
+}

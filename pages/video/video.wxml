@@ -1,0 +1,20 @@
+<!--pages/video/video.wxml-->
+<view class="page-body-info">
+  
+  <view class="video-top" wx:if="{{src == ''}}">
+    <view class="video-top-text"> 正确示意流程</view>
+  </view>
+  <view class="img-wrap" wx:if="{{src == ''}}">
+    <image class="imgif" src="../../static/images/video.gif"></image>
+    <image class="imgpng" src="../../static/images/videotext.png"></image>
+  </view>
+  <view class="video-bottom">
+    <view class="video-bottom-text" wx:if="{{src == ''}}">请录制一段<text class="video-bottom-blue">人脸</text>小视频</view>
+  </view>
+  <view class="image-plus-text {{btnText=='重新拍摄'?'text-hint':''}}" catchtap="chooseVideo">{{btnText}}</view>
+  <view class="image-plus-text submit-video" wx:if="{{src !== ''}}" catchtap="uploadVideo">提交认证</view>
+  <!-- </block> -->
+  <view wx:if="{{src != ''}}" class="video-wrap">
+    <video src="{{src}}" class="video"></video>
+  </view>
+</view> 

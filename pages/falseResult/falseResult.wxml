@@ -1,0 +1,19 @@
+<!--pages/falseResult/falseResult.wxml-->
+<view class="wrap">
+  <view class="content">
+    <image class="content-img" src="../../static/images/result4.png"></image>
+    <view class="content-text">实名认证失败</view>
+    <view class="result">个人身份认证或人脸识别认证有误</view>
+    <view class="content-wrap">
+      <view class="content-btn-wrap" catchtap="goHome">
+        <view class="content-btn">返回首页</view>
+      </view>
+      <view class="content-btn-wrap" catchtap="goRealName">
+        <view class="content-btn">重新认证</view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

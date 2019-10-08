@@ -1,0 +1,52 @@
+<!--pages/identityCard/identityCard.wxml-->
+<view class="wrap">
+  <view class="card-one">
+    <text class="card-one-text">请上传您的身份照片</text>
+    <view class="card-content-wrap">
+      <view class="card-one-content">
+        <view class="card-img-wrap" catchtap="takePictures" data-index="1">
+          <image class="card-one-img" src="{{attendSuccessImg}}"></image>
+          <view class="hint" wx:if="{{isHint1}}">重新拍摄</view>
+        </view>
+        <text class="card-one-text">身份证人像面拍摄</text>
+      </view>
+
+      <view class="card-one-content">
+        <view class="card-img-wrap" catchtap="takePictures" data-index="2">
+          <image class="card-one-img img-right" src="{{twoImg}}"></image>
+          <view class="hint" wx:if="{{isHint2}}">重新拍摄</view>
+        </view>
+        <text class="card-one-text">身份证国徽面拍摄</text>
+      </view> 
+    </view>
+  </view>
+
+  <!-- <view class="card-name-wrap">
+    <view class="card-name card-name-line">
+      <text class="name-content">真实姓名</text>
+      <text class="name-number">刘xx</text>
+    </view>
+    <view class="card-name">
+      <text class="name-content">身份证号</text>
+      <text class="name-number">430581*********0033</text>
+    </view>
+  </view> -->
+
+  <form class="search" bindsubmit="formSubmit">
+    <input name="keyname" placeholder="真实姓名" bindinput="bindKeyInput" class="demo card-name-line" value="{{nameData}}"/>
+    <input name="keyword" placeholder="身份证号" bindinput="bindKeyInput2" class="demo" value="{{cardNumber}}"/>
+    <button class="btn" formType="submit" bindtap="SubmitForm">提交</button>
+  </form>
+
+  <!-- <view class="btn-wrap">
+    <view class="btn">
+      <text class="btn-text">提交</text>
+    </view>
+  </view> -->
+  <text wx:if="{{isSubmit || isSubmit2}}" class="hint3">{{warn?warn:warn2}}</text>
+  <!-- <text wx:if="{{userMessage}}" class="hint3">审核失败，请全部重新输入！</text> -->
+
+
+
+
+</view>

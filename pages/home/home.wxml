@@ -1,0 +1,90 @@
+<!--pages/me/me.wxml-->
+<!-- <text>pages/me/me.wxml</text> -->
+<view class="me-wrap">
+  <view class="me-head">
+    <view class="me-head-title">掌掌财</view>
+    <image class="me-head-left" src="../../static/images/weather.png"></image>
+    <image class="me-head-right" src="../../static/images/message.png"></image>
+  </view>
+  <!-- 头像选项卡结构 -->
+  <view class="me-content-one">
+    <image class="me-one-img" src="{{userInfo ? userInfo.avatarUrl:'../../static/images/touxiang.png'}}"></image>
+    <view class="me-one-textwrap">
+      <text class="me-one-text">{{hour>=0 && hour<9?'早上好':''}} {{hour>=9 && hour<12?'上午好':''}} {{hour>=12 && hour<18?'下午好':''}} {{hour>=18 && hour<24?'晚上好':''}} {{userInfo.nickName}}</text>
+    </view>
+    <view class="me-one-text2">{{onerhesis}}</view>
+  </view> 
+  <!-- 服务选项卡结构 -->
+  <view class="me-content-two" wx:if="{{status!=2}}">
+    <view class="me-two-title">
+      <view class="me-two-titleleft"></view>
+      <text class="me-two-titlecontent">服务</text>
+      <view class="me-two-titleright"></view>
+    </view>
+    <!-- 首页服务菜单内容，可遍历 -->
+    <view class="me-two-name" catchtap="goToNext">
+      <view class="me-two-nameleft">
+        <image class="me-nameleft-img" src="../../static/images/shiming.png"></image>
+      </view>
+      <view class="me-two-namemiddle">
+        <text class="me-namemiddle-top">实名认证</text>
+        <text class="me-namemiddle-bottom">企业或个人信息核实</text>
+      </view>
+      <image class="me-two-nameright" src="../../static/images/jiantou.png"></image>
+    </view>
+
+    <view class="me-two-name" catchtap="goToNext2">
+      <view class="me-two-nameleft me-two-sign">
+        <image class="me-nameleft-img" src="../../static/images/sign.png"></image>
+      </view>
+      <view class="me-two-namemiddle">
+        <text class="me-namemiddle-top">在线签约</text>
+        <text class="me-namemiddle-bottom">保障您的合法权益</text>
+      </view>
+      <image class="me-two-nameright" src="../../static/images/jiantou.png"></image>
+    </view>
+  </view>
+
+
+  <!-- 消息动态选项卡结构 -->
+  <view class="me-content-two" wx:if="{{userInfo && status==2}}">
+    <view class="me-two-title">
+      <view class="me-two-titleleft"></view>
+      <text class="me-two-titlecontent">消息动态</text>
+      <view class="me-two-titleright"></view>
+    </view>
+    <!-- 首页消息动态菜单内容，可遍历 -->
+    <view class="me-message me-message-line" catchtap="toSignMessage">
+      <image class="message-left-img" src="../../static/images/qianyue.png"></image>
+      <text class="message-left-text" wx:if="{{homeMessage.totalCountContract>0}}">您有<text class="message-left-text2">{{homeMessage.totalCountContract}}</text>条待签约</text>
+      <text class="message-left-text" wx:if="{{!homeMessage.totalCountContract>0}}">签约信息</text>
+      <!-- <text class="message-right-text">{{homeMessage.lastDateContract}}</text> -->
+      <image class="message-right-img" src="../../static/images/jiantou.png"></image>
+    </view>
+
+    <view class="me-message" catchtap="toReceiptMessage">
+      <image class="message-left-img daikuan" src="../../static/images/daikuan.png"></image>
+      <text class="message-left-text" wx:if="{{homeMessage.totalAmountCommi>0}}">您收到<text class="message-left-text2">{{homeMessage.totalAmountCommi}}</text>元</text>
+      <text class="message-left-text" wx:if="{{!homeMessage.totalAmountCommi>0}}">您还没有收款记录</text>
+      <!-- <text class="message-right-text">{{homeMessage.lastDateCommi}}</text> -->
+      <image class="message-right-img" src="../../static/images/jiantou.png"></image>
+    </view>
+  </view>
+  <!-- 服务说明卡结构 -->
+  <!-- <view class="me-content-two service" catchtap="goToService">
+    <view class="me-two-title">
+      <view class="me-two-titleleft"></view>
+      <text class="me-two-titlecontent">服务说明</text>
+      <view class="me-two-titleright"></view>
+    </view> -->
+    <!-- <text class="me-serve-text">服务说明(文字图片)</text> -->
+    <!-- <image class="topImg" src="../../static/images/fwsm.png"></image>
+  </view> -->
+
+  <view class="me-content-twos" catchtap="goToService">
+    
+    <image class="topImgs" src="../../static/images/fuwus.png"></image>
+  </view>
+
+
+</view>

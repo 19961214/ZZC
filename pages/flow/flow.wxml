@@ -1,0 +1,9 @@
+<!--pages/flow/flow.wxml-->
+<view class="wrap">
+  <view class="flow-title">如何使用【掌掌财】小程序？</view>
+  <view class="flow-img-wrap">
+    <image class="flow-img" src="../../static/images/flow.png"></image>
+  </view>
+
+
+</view>

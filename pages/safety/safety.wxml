@@ -1,0 +1,4 @@
+<!--pages/safety/safety.wxml-->
+<view class="wrap">
+  <image class="img" src="../../static/images/safety.png"></image>
+</view>

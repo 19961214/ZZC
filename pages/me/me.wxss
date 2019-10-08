@@ -1,0 +1,171 @@
+/* pages/me/me.wxss */
+
+page {
+  height: 100%;
+  background-color: #ececee;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me-head {
+  width: 100%;
+  height: 400rpx;
+  background-color: #3960d8;
+  display: flex;
+  padding: 20rpx 40rpx 40rpx 40rpx;
+  margin-top: 140rpx;
+}
+.me-head-title{
+  width: 100%;
+  height: 140rpx;
+  background-color: #3960d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30rpx;
+}
+
+.me-head-img {
+  width: 193rpx;
+  height: 193rpx;
+  border-radius: 50%;
+  margin-right: 40rpx;
+}
+
+.me-head-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.me-head-text1 {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.me-head-text2 {
+  font-size: 40rpx;
+  color: #fff;
+  margin-top: 10rpx;
+}
+.name-ok{
+  width: 150rpx;
+  height: 50rpx;
+  border: 1rpx solid #fff;
+  border-radius: 25rpx 0 0 25rpx;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 200rpx;
+}
+.name-ok-img{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+.name-ok-text{
+  color: #fff;
+  font-size: 25rpx;
+}
+.me-card {
+  width: 90%;
+  height: 283rpx;
+  background-color: #fff;
+  box-shadow: #b7c8ef 5rpx 5rpx 10rpx 5rpx;
+  border-radius: 20rpx;
+  margin-top: -150rpx;
+  display: flex;
+}
+
+.me-card-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-card-text1 {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+
+.me-card-text2 {
+  font-size: 27rpx;
+}
+
+.me-list {
+  width: 100%;
+  height: 100%;
+  margin-top: 30rpx;
+}
+
+.me-list-one {
+  width: 100%;
+  height: 90rpx;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.me-one-img1 {
+  width: 42rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 20rpx;
+}
+
+.me-one-text {
+  font-size: 28rpx;
+}
+.me-one-hint{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 23rpx;
+  background-color: rgb(216, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 60rpx;
+}
+.me-one-img2 {
+  width: 14rpx;
+  height: 24rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.me-list-middle{
+  margin-top: 20rpx;
+}
+.me-phone{
+  font-size: 25rpx;
+  color: #999;
+  margin-top: 40rpx;
+}
+.me-line{
+  border-bottom: 1rpx solid #ececee;
+}

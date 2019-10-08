@@ -1,0 +1,68 @@
+<!--pages/me/me.wxml-->
+<view class="wrap">
+  <view class="me-head">
+    <view class="me-head-title">掌掌财</view>
+    <image class="me-head-img" src="{{userInfo ? userInfo.avatarUrl:'../../static/images/touxiang.png'}}"></image>
+    <view class="me-head-text">
+      <text class="me-head-text1">{{userInfo.nickName}} 您好</text>
+      <text class="me-head-text2">开启财富新生活</text> 
+    </view>
+    <view class="name-ok" wx:if="{{status==2}}">
+      <image class="name-ok-img" src="../../static/images/nameok.png"></image>
+      <view class="name-ok-text">已认证</view>
+    </view>
+    <view class="name-ok" wx:if="{{status!=2}}">
+      <image class="name-ok-img" src="../../static/images/namefalse.png"></image>
+      <view class="name-ok-text green">未认证</view>
+    </view>
+  </view>
+ 
+  <view class="me-card">
+    <view class="me-card-content">
+      <text class="me-card-text1">{{amount && userInfo ? amount.totalAmount : '0'}}</text>
+      <text class="me-card-text2">收款总额(元)</text>
+    </view>
+    <view class="me-card-content">
+      <text class="me-card-text1">{{amount && userInfo ? amount.sevenDayAmount : '0'}}</text>
+      <text class="me-card-text2">近七天收款金额(元)</text>
+    </view>
+  </view>
+
+  <view class="me-list">
+    <view class="me-list-one" catchtap="goSignMessage"> 
+      <image class="me-one-img1" src="../../static/images/qianyue.png"></image>
+      <text class="me-one-text">签约信息</text>
+      <view class="me-one-hint" wx:if="{{homeMessage.totalCountContract!==0 && userInfo}}">{{homeMessage.totalCountContract}}</view>
+      <image class="me-one-img2" src="../../static/images/jiantou.png"></image>
+    </view> 
+
+    <view class="me-list-middle">
+      <view class="me-list-one me-line" catchtap="goReceiptNumber">
+        <image class="me-one-img1" src="../../static/images/daikuan1.png"></image>
+        <text class="me-one-text">收款账号</text>
+        <image class="me-one-img2" src="../../static/images/jiantou.png"></image>
+      </view>
+      <view class="me-list-one" catchtap="goReceiptMessage">
+        <image class="me-one-img1" src="../../static/images/jizhang.png"></image>
+        <text class="me-one-text">收款记录</text>
+        <image class="me-one-img2" src="../../static/images/jiantou.png"></image>
+      </view>
+    </view>
+
+    <view class="me-list-middle" catchtap="goProblem">
+      <view class="me-list-one me-line">
+        <image class="me-one-img1" src="../../static/images/issue.png"></image>
+        <text class="me-one-text">常见问题</text>
+        <image class="me-one-img2" src="../../static/images/jiantou.png"></image>
+      </view>
+      
+      <view class="me-list-one" catchtap="goComplain">
+        <image class="me-one-img1" src="../../static/images/tousu.png"></image>
+        <text class="me-one-text">投诉建议</text>
+        <image class="me-one-img2" src="../../static/images/jiantou.png"></image>
+      </view>
+    </view>
+  </view>
+  <text class="me-phone">联系电话：188 2316 9298</text>
+
+</view>

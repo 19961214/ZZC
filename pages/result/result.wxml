@@ -1,0 +1,12 @@
+<!--pages/result/result.wxml-->
+<view class="wrap">
+  <view class="content">
+    <image class="content-img" src="../../static/images/result3.png"></image>
+    <view class="content-text">实名认证成功</view>
+    <view class="content-btn-wrap" catchtap="goHome">
+      <view class="content-btn">返回首页</view>
+    </view>
+  </view>
+
+
+</view>

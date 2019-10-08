@@ -1,0 +1,4 @@
+<view>
+  <navbar page-name="合同签署" nav-index='{{true}}'></navbar>
+  <web-view src="{{contractUrl}}"></web-view>
+</view>

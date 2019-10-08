@@ -1,0 +1,83 @@
+<!--pages/signMessage/signMessage.wxml-->
+
+<view class="wrap">
+  <view id="sign-head">
+    <view data-num="1" class="sign-head-left {{_num==1?'cur':''}}" catchtap="menuClick">待签约({{res.total ? res.total : 0}})</view>
+    <view data-num="2" class="sign-head-right {{_num==2?'cur':''}}" catchtap="menuClick">已签约({{res1.total ? res1.total : 0}})</view>
+  </view>
+  <view class="false-content" wx:if="{{_num==1 && awaitSign.length==0}}">
+    <image class="false-img" src="../../static/images/falseSign.jpg"></image>
+    <view class="false-text">您还没有任何待签约记录</view>
+  </view>
+
+  <scroll-view scroll-y style="height: {{clientHeight}}px;" class="sign-card-wrap" wx:if="{{_num==1 && awaitSign.length!=0}}" bindscrolltolower="lower1">
+    <!-- 卡片样式 -->
+    <view class="sign-card" wx:for="{{awaitSign}}" wx:key="index">
+      <view class="sign-card-top">
+        <view class="card-top-text">
+          <text class="card-top-text1">合同名称：</text>
+          <text class="card-top-text2">{{item.contractName}}</text>
+        </view>
+      </view>
+      <!-- 卡片内容下部 -->
+      <view class="sign-card-bottom">
+        <view class="card-bottom-text">
+          <text class="card-bottom-text1">合同编号：{{item.pid}}</text>
+          <text class="card-bottom-text2">合同状态：待签暑</text>
+
+
+        </view>
+        <!-- 立即签署按钮 -->
+        <view data-contract-id="{{item.pid}}" class="sign-card-btn" bindtap="signContract">
+          <view class="card-btn">立即签署</view>
+        </view>
+      </view>
+    </view>
+
+
+  </scroll-view>
+
+  <!-- 已签约结构 -->
+  <view class="false-content" wx:if="{{_num==2 && finishSign.length==0}}">
+    <image class="false-img" src="../../static/images/falseSign.jpg"></image>
+    <view class="false-text">您还没有任何已签约记录</view>
+  </view>
+  <scroll-view scroll-y class="sign-card-wrap" style="height: {{clientHeight}}px;" wx:if="{{_num==2 && finishSign.length!=0}}" bindscrolltolower="lower2">
+    <!-- 卡片样式 -->
+    <view data-contract-viewpdfUrl="{{item.viewpdfUrl}}" class="sign-card" wx:for="{{finishSign}}" wx:key="index" catchtap="viewContract">
+      <view class="sign-card-top">
+        <view class="card-top-text">
+          <text class="card-top-text1">合同名称：</text>
+          <text class="card-top-text2">{{item.contractName}}</text>
+        </view>
+      </view>
+      <!-- 卡片内容下部 -->
+      <view class="sign-card-bottom">
+        <view class="card-bottom-text">
+          <text class="card-bottom-text1">合同编号：{{item.pid}}</text>
+          <text class="card-bottom-text2">合同状态：{{item.status==3?'已签暑':''}} {{item.status==5?'签署失败':''}} {{item.status==4?'签署过期':''}}</text>
+          <text class="card-bottom-text2">签暑时间：{{item.bPartyTime}}</text>
+
+        </view>
+        <!-- 已经签约图片 -->
+        <view class="sign-card-btn" wx:if="{{item.status==3}}">
+          <view class="card-img-wrap">
+            <image class="sign-card-img" src="../../static/images/yiqianyue.png"></image>
+          </view>
+        </view>
+        <view data-contract-id="{{item.pid}}" class="sign-card-btn" catchtap="signContract" wx:if="{{item.status==5}}">
+          <view class="card-btn">立即签署</view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </scroll-view>
+
+
+
+
+
+
+</view>

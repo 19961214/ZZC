@@ -1,0 +1,77 @@
+<!--pages/receiptNumber/receiptNumber.wxml-->
+<view class="wrap">
+  <!-- 支付宝 -->
+  <!-- <view class="number-card">
+    <view class="number-card-title">支付宝</view>
+    <view class="number-card-content">
+      <view class="number-img-wrap">
+        <image class="number-img" src="../../static/images/zhifubao2.png"></image>
+      </view>
+      <view class="number-img-text">jju*****8@qq.com</view>
+    </view>
+  </view> -->
+  <!-- 微信 -->
+  <!-- <view class="number-card">
+    <view class="number-card-title">微信</view>
+    <view class="number-card-content wechat">
+      <view class="number-img-wrap">
+        <image class="number-img wechat2" src="../../static/images/weixin2.png"></image>
+      </view>
+      <view class="number-img-text">wxj*****j332222</view>
+    </view>
+  </view> -->
+  <!-- 银行卡 -->
+  <view class="number-card">
+    <view class="number-card-title">银行卡</view>
+    <!-- 银行卡卡片 -->
+    <view wx:for="{{account}}" wx:key="index" class="card-content card-top {{item.bankIndex==4?'card-color3':''}} {{item.bankIndex==1?'card-color2':''}} {{item.bankIndex==3?'card-color1':''}} {{item.bankIndex==2?'card-color':''}}  {{item.bankIndex==5?'card-color5':''}} {{item.bankIndex==6?'card-color6':''}} {{item.bankIndex==7?'card-color7':''}} {{item.bankIndex==8?'card-color8':''}} {{item.bankIndex==9?'card-color9':''}} {{item.bankIndex==10?'card-color10':''}} {{item.bankIndex==11?'card-color11':''}} {{item.bankIndex==12?'card-color12':''}} {{item.bankIndex==13?'card-color13':''}} {{item.bankIndex==14?'card-color14':''}} {{item.bankIndex==15?'card-color14':''}} {{item.bankIndex==16?'card-color14':''}} {{item.bankIndex==17?'card-color14':''}} {{item.bankIndex==18?'card-color14':''}} {{item.bankIndex==19?'card-color14':''}} {{item.bankIndex==20?'card-color14':''}} {{item.bankIndex==21?'card-color14':''}} {{item.bankIndex==22?'card-color14':''}} {{item.bankIndex==23?'card-color14':''}} {{item.bankIndex==99?'card-color14':''}}">
+      <view class="card-content-top">
+        <view class="card-content-imgwrap">
+          <image class="card-content-img" src="{{item.bankIndex==4?'../../static/images/BOC.png':''}} {{item.bankIndex==1?'../../static/images/ABC.png':''}} {{item.bankIndex==3?'../../static/images/CCB.png':''}} {{item.bankIndex==2?'../../static/images/CMB.png':''}} {{item.bankIndex==5?'../../static/images/BCOM.png':''}} {{item.bankIndex==6?'../../static/images/SPABANK.png':''}} {{item.bankIndex==7?'../../static/images/ICBC.png':''}} {{item.bankIndex==8?'../../static/images/CIB.png':''}} {{item.bankIndex==9?'../../static/images/PSBC.png':''}} {{item.bankIndex==10?'../../static/images/BEA.png':''}} {{item.bankIndex==11?'../../static/images/CBHB.png':''}} {{item.bankIndex==12?'../../static/images/CEBB.png':''}} {{item.bankIndex==13?'../../static/images/CIB.png':''}} {{item.bankIndex==14?'../../static/images/CITI.png':''}} {{item.bankIndex==15?'../../static/images/CMBC.png':''}} {{item.bankIndex==16?'../../static/images/CZB.png':''}} {{item.bankIndex==17?'../../static/images/ECITIC.png':''}} {{item.bankIndex==18?'../../static/images/GDB.png':''}} {{item.bankIndex==19?'../../static/images/HSBC.png':''}} {{item.bankIndex==20?'../../static/images/HSB.png':''}} {{item.bankIndex==21?'../../static/images/HXB.png':''}} {{item.bankIndex==22?'../../static/images/PSBC.png':''}} {{item.bankIndex==23?'../../static/images/SPDB.png':''}}  {{item.bankIndex==99?'../../static/images/else.png':''}}"></image>
+        </view>
+
+
+        <view class="bank-name">{{item.bankName}}</view>
+        <view class="card-content-text">*****{{item.bankNumber}}</view>
+      </view>
+      <view class="card-content-bottom" wx:if="{{index == account.length-1}}"> 
+        <image class="card-content-logo" src="../../static/images/cardlogo.png"></image>
+        <view class="content-bottom-text">每日支付限额10000元</view>
+      </view>
+    </view>
+    <!-- 银行卡卡片 -->
+    <!-- <view class="card-content card-top card-color1"> 
+      <view class="card-content-top">
+        <image class="card-content-img" src="../../static/images/jianshe.png"></image>
+        <view class="card-content-text">*****4932</view>
+      </view>
+      <view class="card-content-bottom">
+        <image class="card-content-logo" src="../../static/images/cardlogo.png"></image>
+        <view class="content-bottom-text">每日支付限额10000元</view>
+      </view>
+    </view>
+    <view class="card-content card-top card-color2">
+      <view class="card-content-top">
+        <image class="card-content-img" src="../../static/images/nongye.png"></image>
+        <view class="card-content-text">*****4932</view>
+      </view>
+      <view class="card-content-bottom">
+        <image class="card-content-logo" src="../../static/images/cardlogo.png"></image>
+        <view class="content-bottom-text">每日支付限额10000元</view>
+      </view>
+    </view>
+    <view class="card-content card-top card-color3">
+      <view class="card-content-top">
+        <image class="card-content-img" src="../../static/images/zhongguo.png"></image>
+        <view class="card-content-text">*****4932</view>
+      </view>
+      <view class="card-content-bottom">
+        <image class="card-content-logo" src="../../static/images/cardlogo.png"></image>
+        <view class="content-bottom-text">每日支付限额10000元</view>
+      </view>
+    </view> -->
+
+  </view>
+
+
+</view>

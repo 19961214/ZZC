@@ -1,0 +1,4 @@
+<!--pages/speedy/speedy.wxml-->
+<view class="wrap">
+  <image class="img" src="../../static/images/speedy.png"></image>
+</view>

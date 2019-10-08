@@ -1,0 +1,15 @@
+<!--pages/service/service.wxml-->
+
+<view class="wrap">
+  <view class="service-top" catchtap="goflow">
+    <image class="service-top-img" src="../../static/images/banner-big.png"></image>
+  </view>
+  <view class="service-title">我们能为您做什么？</view>
+  <view class="service-bottom">
+    <view class="service-bottom-content"><image class="service-bottom-img" src="../../static/images/banner.png" catchtap="gosafety"></image></view>
+    <view class="service-bottom-content"><image class="service-bottom-img" src="../../static/images/banner3.png" catchtap="gospeedy"></image></view>
+    <view class="service-bottom-content"><image class="service-bottom-img" src="../../static/images/banner2.png" catchtap="goefficient"></image></view>
+   
+  </view>
+
+</view>

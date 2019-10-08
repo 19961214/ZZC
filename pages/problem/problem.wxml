@@ -1,0 +1,112 @@
+<!--pages/problem/problem.wxml-->
+<view class="wrap">
+
+  <view class="problem-top">
+    掌掌财小程序是平台针对自由职业者新推出的一款移动端产品，主要服务于自由职业者解决开发票难、税点高、合同签署困难等问题。用户可通过掌掌财小程序完成实名认证、电子合同签约、查询自己的收入流水记录等服务。
+  </view>
+  <!-- item开始 -->
+  <view class="query" catchtap="open1">
+    <text class="queryText {{isShow1 ? 'overstriking' : ''}}">
+      1.我为什么要签约? 
+    </text>
+    <image class="img {{isShow1 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow1}}">
+    <text class="answerText">
+      您作为个体工商业者或自由职业者通过从事合法合规的生产经经营活动获得收入，【掌掌财】为您提供共享经济综合服务，其中包括为您进行佣金结算、发放薪资并代征您个人所得税。【掌掌财】在提供服务前，需要与您签订合作伙伴协议，使您在获得我们提供的优质服务的同时保障您的合法权益。
+    </text>
+  </view>
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <view class="query" catchtap="open2">
+    <text class="queryText {{isShow2 ? 'overstriking' : ''}}">
+      2.怎么提现? 
+    </text>
+    <image class="img {{isShow2 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow2}}">
+    <text class="answerText">
+      相关款项已直接结算至您提供给合作商户的银行卡、微信或支付宝账户，您不需要在小程序内操作提现。【掌掌财】展示的是您的历史已收款记录，并不是您的可提现金额。
+    </text>
+  </view>
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <!-- <view class="query" catchtap="open3">
+    <text class="queryText {{isShow3 ? 'overstriking' : ''}}">
+      3.认证过程中提示银行卡与银行预留手机号不匹配?
+    </text>
+    <image class="img {{isShow3 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow3}}">
+    <text class="answerText">
+      请确认银行预留手机号是输该银行卡时所填写的手机号码。如预留手机号已忘记或已停用，请联系银行客服处理。如您已确认预留号码无误，请在工作时间段拨打【掌掌财】客服热线处理。
+    </text>
+  </view> -->
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <view class="query" catchtap="open4">
+    <text class="queryText {{isShow4 ? 'overstriking' : ''}}">
+      3.怎么更改收款信息?
+    </text>
+    <image class="img {{isShow4 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow4}}">
+    <text class="answerText">
+      小程序端目前不支持绑定银行卡和更改收款信息，只展示收款账号信息，由您所服务的客户公司在我司后台录入您所提供的对应银行收款信息，审核成功即可在小程序端进行展示。
+    </text>
+  </view>
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <view class="query" catchtap="open5">
+    <text class="queryText {{isShow5 ? 'overstriking' : ''}}">
+      4.收不到验证码的原因? 
+    </text>
+    <image class="img {{isShow5 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow5}}">
+    <text class="answerText">
+      （1）手机装了拦截软件，请查看手机的软件设置。
+（2）手机暂无信号、欠费或停机。
+（3）用户自己在运营商那边设置了黑名单，可以联系运营商解决。
+（4）个别地区有手机、运营商故障等。
+（5）如果还有其他问题，请在工作日拨打客服热线联系客服解决。
+    </text>
+  </view>
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <view class="query" catchtap="open6">
+    <text class="queryText {{isShow6 ? 'overstriking' : ''}}">
+      5.怎么更换微信号? 
+    </text>
+    <image class="img {{isShow6 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow6}}">
+    <text class="answerText">
+      如需更换微信号，请联系客服后台解绑微信，解绑成功，在小程序端进行重新实名认证即可。
+    </text>
+  </view>
+  <!-- item结束 -->
+  <!-- item开始 -->
+  <view class="query" catchtap="open7">
+    <text class="queryText {{isShow7 ? 'overstriking' : ''}}">
+      6.怎么解除签约? 
+    </text>
+    <image class="img {{isShow7 ? 'rotate' : ''}}" src="../../static/images/jiantou.png"></image>
+  </view>
+  <view class="answer" wx:if="{{isShow7}}">
+    <text class="answerText">
+      如需解约请您提供姓名、证件号码、所合作的企业名称并说明需解约的原因，发送邮件至 zhuomingyuan@xyck.com。厦云创科工作人员会在3个工作日内处理完成，若您未及时收到回复，可联系客服热线为您解决。
+    </text>
+  </view>
+  <!-- item结束 -->
+  
+<view class="problem-bottom">
+  <view class="problem-bottom-text1">联系电话: 188 2316 9298</view>
+  <view class="problem-bottom-text2">工作日 9:00~18:00</view>
+  <!-- <view class="problem-bottom-text3"> 掌掌财——共享经济综合服务平台</view> -->
+</view>
+
+
+
+
+</view>

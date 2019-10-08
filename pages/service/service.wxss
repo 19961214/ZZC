@@ -1,0 +1,44 @@
+/* pages/service/service.wxss */
+page {
+  height: 100%;
+}
+.wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.service-top{
+  width: 100%;
+  height: 350rpx;
+}
+.service-top-img{
+  width: 100%;
+  height: 350rpx;
+}
+.service-title{
+  color: #333;
+  width: 100%;
+  padding-left: 30rpx;
+  font-size: 33rpx;
+  margin-top: 25rpx;
+  font-weight: 600;
+}
+.service-bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.service-bottom-content{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 25rpx;
+}
+.service-bottom-img{
+  width: 100%;
+  height: 200rpx;
+  
+}

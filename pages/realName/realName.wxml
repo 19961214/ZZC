@@ -1,0 +1,26 @@
+<!--pages/trueName/trueName.wxml-->
+<view class="wrap">
+  <view class="card" catchtap="goIdentityCard">
+    <view class="card-text">
+      <text class="card-text1">居民身份证认证</text>
+      <text class="card-text2">我持有中华人民共和国身份证</text>
+    </view>
+    <view class="card-right">
+      <image class="card-img" src="../../static/images/card.png"></image>
+    </view>
+  </view>
+
+  <view class="card" catchtap="hint">
+    <view class="card-text text-width">
+      <text class="card-text1">其他身份证件认证</text>
+      <text class="card-text2">我持有其他身份证件（护照、港澳
+居民来往内地通行证、台湾居民来往大陆通行证、外国人永久居住身
+份证）</text>
+    </view>
+    <view class="card-right img-color">
+      <image class="card-img" src="../../static/images/card2.png"></image>
+    </view>
+  </view>
+
+
+</view>

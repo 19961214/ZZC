@@ -1,0 +1,30 @@
+<!--pages/nameScreen/nameScreen.wxml-->
+<view>
+  <view class="big-img-wrap"><image class="big-img" src="../../static/images/banner-img.png"></image></view>
+  <view class="content">
+    <view class="content1-wrap">
+      <view class="content1-img-wrap"><image class="content1-img" src="../../static/images/banner-jian.png"></image></view>
+      
+      <text class="content1-text">您同意通过第三方电子合同签约平台（深圳法大大网络科技有限公司）简称“法大大”向法大大合作的CA机构申请并使用该机构颁发给用户的数字证书</text>
+    </view>
+
+    <view class="content1-wrap content1-wrap2">
+      <view class="content1-img-wrap"><image class="content1-img" src="../../static/images/banner-jian.png"></image></view>
+      
+      <text class="content1-text">承诺在申请证书时提供真实、完整和准确的信息及证明材料</text>
+    </view>
+
+
+    <view class="btn-wrap" catchtap="gomobile">
+      <image class="btn-img" src="../../static/images/banner-btn.png"></image>
+      <text class="btn-text">同意并进行实名认证</text>
+    </view>
+    
+  
+  </view>
+
+
+
+
+
+</view>

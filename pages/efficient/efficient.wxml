@@ -1,0 +1,4 @@
+<!--pages/efficient/efficient.wxml-->
+<view class="wrap">
+  <image class="img" src="../../static/images/efficient.png"></image>
+</view>

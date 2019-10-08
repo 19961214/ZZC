@@ -1,0 +1,48 @@
+<!--pages/complain/complain.wxml-->
+<view class="wrap">
+  <view class="complainTop">
+    <view class="complainTop-title">
+      <view class="line"></view>
+      <view class="title">掌掌财</view>
+      <view class="line"></view>
+    </view>
+    <view class="complainTop-content"> 
+      <view class="complainTop-item {{ tepe1 ?'complainTop-item-hint':''}}" catchtap="suggesType" data-index='1' data-value='小程序使用问题'>小程序使用问题</view>
+      <view class="complainTop-item {{ tepe2 ?'complainTop-item-hint':''}}" catchtap="suggesType" data-index='2' data-value='收款到账问题'>收款到账问题</view>
+      <view class="complainTop-item {{ tepe3 ?'complainTop-item-hint':''}}" catchtap="suggesType" data-index='3' data-value='签约信息问题'>签约信息问题</view>
+      <view class="complainTop-item {{ tepe4 ?'complainTop-item-hint':''}}" catchtap="suggesType" data-index='4' data-value='代征税收问题'>代征税收问题</view>
+      <view class="complainTop-item {{ tepe5 ?'complainTop-item-hint':''}}" catchtap="suggesType" data-index='5' data-value='改进建议'>改进建议</view>
+    </view>
+  </view>
+  <view class="complainBottom">
+    <view class="complainBottom-hint">*必填</view>
+    <view class="complainBottom-hint2">{{iptContent.length}}/200</view>
+    <textarea class="complainBottom-ipt" rows="50" cols="3" maxlength="200" placeholder="说说哪里不满意，小财一定努力改进提升~" bindinput="bindKeyInput"></textarea>
+  </view>
+
+
+  <view class="photo-content">
+    <view class="camera photo-item" wx:for="{{imgs}}" wx:key="index">
+      <view class="camera-img">
+        <image class="camera-img" src="{{item}}"></image>
+        <view class="cancel" catchtap="cancel" data-index='{{index}}'>X</view>
+      </view>
+    </view>
+
+
+    <view class="camera" catchtap="takePictures" wx:if="{{imgLength!=5}}">
+      <image class="camera-img" src="../../static/images/photo.png"></image>
+      <view class="camera-text-wrap">
+        <text class="camera-text">{{imgLength==0?'上传图片':''}} {{imgLength>0?imgLength+'/5':''}}</text>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class="btn-wrap" catchtap="{{iptContent && type? 'getSuggest' : ''}}">
+    <button class="btn {{iptContent && type? 'btn2' : ''}}">提交建议</button>
+  </view>
+
+
+</view>
